@@ -16,13 +16,8 @@ public class EventApplicationTests {
 
 	@Test
 	public void contextLoads() {
-		Booking booking = new Booking("aaa",System.currentTimeMillis(),new Date());
+		Booking booking = new Booking("张三",System.currentTimeMillis(),new Date());
 		aService.book(booking);
-		try {
-			Thread.sleep(9999);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
 	}
 
 }

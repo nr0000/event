@@ -12,7 +12,7 @@ public class AService {
 
     public void book(Booking booking){
         BookingCreatedEvent bookingCreatedEvent = new BookingCreatedEvent(this, booking);
-        //发布
+        //发布事件
         context.publishEvent(bookingCreatedEvent);
 
         try {
